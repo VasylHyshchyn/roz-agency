@@ -273,3 +273,162 @@ button:hover {
   margin: 10px;
   border-radius: 20px;
 }
+
+.capital ul {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 5px;
+  padding: 0;
+}
+
+.capital h1 {
+  font-size: 32px;
+  font-weight: 700;
+  padding: 0;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  background-color: #f8f8f8;
+}
+
+.calcTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 14%;
+  padding-left: 8%;
+  margin-top: 5%;
+}
+
+.calcTop p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.calcTop h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.calcMid {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  gap: 16px;
+  margin-top: 5%;
+}
+
+.calcMid div {
+  height: 85px;
+  width: 380px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.calcMid div:hover {
+  background-color: #9c9c9c;
+  color: #ffffff;
+}
+
+.calcBot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 8%;
+  padding-right: 14%;
+  margin-top: 5%;
+}
+
+.calcBot h5 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.range {
+  height: 80px;
+  width: 380px;
+  padding: 0 65px 0 45px;
+}
+
+.sliderValue {
+  position: relative;
+  width: 100%;
+}
+
+.sliderValue span {
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  /* background-color: #a8eb54; */
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000;
+  top: -40px;
+  transform: translateX(-50%);
+  line-height: 55px;
+  z-index: 2;
+}
+
+.sliderValue span.show {
+  transform: translateX(-70%) scale(1);
+}
+
+.sliderValue span:after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  left: 50%;
+  z-index: -1;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.range .field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.range .field input {
+  -webkit-appearance: none;
+  height: 8px;
+  width: 100%;
+  background: #ddd;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+.range .field .value {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.range .field .value.left {
+  left: -43px;
+}
+
+.range .field .value.right {
+  right: -48px;
+}
+
+.range .field input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  background-color: #a8eb54;
+  border-radius: 50%;
+  cursor: pointer;
+}

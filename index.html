@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Roz agency</title>
     <link rel="stylesheet" href="style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -120,11 +121,14 @@
       </div>
       <div class="botSide">
         <div class="capital">
+          <h1>Накопичення</h1>
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Фінансові біржі</li>
+            <li>Інвестиційний поліс</li>
+            <li>Нерухомість</li>
+            <li>Земля</li>
+            <li>Криптовалюта</li>
+            <li>Стартапи</li>
           </ul>
         </div>
         <div class="defence">
@@ -137,5 +141,42 @@
         </div>
       </div>
     </div>
+    <div class="calculator">
+      <div class="calcTop">
+        <h1>Калькулятор інвестицій</h1>
+        <p>
+          Підберіть страхову суму та дізнайтесь яку <br />
+          орієнтовну суму виплати зможете отримати у <br />
+          випадку травми або захворювання.
+        </p>
+      </div>
+      <div class="calcMid">
+        <div class="calcMidLeft">Страхові компанії життя</div>
+        <div class="calcMidRight">Фондові біржі</div>
+      </div>
+      <div class="calcBot">
+        <div class="calcBotLeft">
+          <h5>Сума інвестицій</h5>
+          <div class="range">
+            <div class="sliderValue">
+              <span>20000</span>
+            </div>
+            <div class="field">
+              <div class="value left">20000</div>
+              <input
+                type="range"
+                min="20000"
+                max="100000"
+                value="35000"
+                steps="5000"
+              />
+              <div class="value right">100000</div>
+            </div>
+          </div>
+        </div>
+        <div class="calcBotRight">some content here</div>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
